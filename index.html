@@ -1,139 +1,115 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hades Management – OFM Pro</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hades – OFM Agency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #0d0d0d;
-      color: #ffffff;
-      line-height: 1.7;
-      scroll-behavior: smooth;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
     }
     header {
       text-align: center;
-      padding: 60px 20px 40px;
-      background: linear-gradient(to bottom, #0a0a0a, #111);
+      padding: 80px 20px 40px;
     }
     header img {
-      max-width: 150px;
+      width: 120px;
       margin-bottom: 20px;
-      animation: fadeIn 1.5s ease-in-out;
     }
     header h1 {
       font-size: 48px;
-      color: #e50914;
-      animation: fadeIn 2s ease-in-out;
+      font-weight: 700;
+      margin-bottom: 10px;
     }
     header p {
-      color: #bbb;
       font-size: 18px;
-      margin-top: 10px;
-      animation: fadeIn 2.2s ease-in-out;
+      color: #aaa;
     }
     section {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
       padding: 60px 20px;
     }
     h2 {
-      font-size: 28px;
+      font-size: 32px;
       color: #e50914;
       margin-bottom: 20px;
     }
-    ul li {
-      margin-bottom: 12px;
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
     }
-    .btn {
+    .features div {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .features div:hover {
+      transform: scale(1.03);
+    }
+    .cta {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #111;
+    }
+    .cta a {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
+      padding: 15px 30px;
+      margin: 10px;
       background-color: #e50914;
       color: white;
       text-decoration: none;
       border-radius: 5px;
+      font-size: 18px;
       font-weight: bold;
-      transition: background 0.3s;
+      transition: background-color 0.3s;
     }
-    .btn:hover {
-      background-color: #c40812;
-    }
-    form {
-      margin-top: 30px;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      background-color: #1a1a1a;
-      border: none;
-      border-radius: 5px;
-      color: white;
-    }
-    input::placeholder, textarea::placeholder {
-      color: #888;
+    .cta a:hover {
+      background-color: #b0060e;
     }
     footer {
       text-align: center;
       padding: 30px 20px;
-      background-color: #111;
+      font-size: 14px;
       color: #666;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logo.png" alt="Hades Logo">
+    <img src="logo.png" alt="Logo Hades" />
     <h1>Hades Management</h1>
-    <p>Tu crées. On gère. Tu gagnes.</p>
+    <p>OnlyFans Management haut de gamme. Tu crées, on gère.</p>
   </header>
 
   <section>
     <h2>Nos services</h2>
-    <ul>
-      <li>🔹 Création de contenu sur mesure</li>
-      <li>🔹 Réponses aux fans 24/7</li>
-      <li>🔹 Gestion & promotion de ton compte</li>
-      <li>🔹 Confidentialité garantie</li>
-    </ul>
+    <div class="features">
+      <div>🎯 Stratégie de contenu personnalisée</div>
+      <div>📈 Optimisation des revenus</div>
+      <div>📩 Réponses fans & messages privés</div>
+      <div>📸 Gestion complète de ton profil</div>
+      <div>🔐 Confidentialité & sécurité assurées</div>
+    </div>
   </section>
 
-  <section>
-    <h2>Offre</h2>
-    <p>
-      💸 <strong>Partage 50/50</strong> des revenus<br>
-      📆 <strong>Engagement 5 mois minimum</strong><br>
-      🎯 Stratégie personnalisée & coaching inclus
-    </p>
-    <a href="#contact" class="btn">Nous contacter</a>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <form action="mailto:HadesmgmtOF@protonmail.com" method="POST" enctype="text/plain">
-      <input type="text" name="Nom" placeholder="Ton nom" required>
-      <input type="email" name="Email" placeholder="Ton email" required>
-      <textarea name="Message" rows="5" placeholder="Dis-nous ce que tu veux…" required></textarea>
-      <button type="submit" class="btn">Envoyer</button>
-    </form>
-    <p style="margin-top:20px;">
-      📧 <a href="mailto:HadesmgmtOF@protonmail.com" style="color:#e50914">HadesmgmtOF@protonmail.com</a><br>
-      📸 <a href="https://www.instagram.com/ofmbyhades" target="_blank" style="color:#e50914">@ofmbyhades</a>
-    </p>
+  <section class="cta">
+    <h2>Tu veux bosser avec nous ?</h2>
+    <a href="https://www.instagram.com/ofmbyhades" target="_blank">Nous contacter sur Instagram</a>
+    <a href="mailto:HadesmgmtOF@protonmail.com">Envoyer un mail</a>
   </section>
 
   <footer>
-    © 2025 Hades Management. Tous droits réservés.
+    © 2025 Hades. Tous droits réservés.
   </footer>
 
 </body>
